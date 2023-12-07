@@ -73,7 +73,7 @@ setup(
     packages=find_namespace_packages(include=["dbt", "dbt.*"]),
     include_package_data=True,
     install_requires=[
-        "dbt-core~={}".format(dbt_core_version),
+        "dbt-core @ git+https://github.com/mrk-its/dbt-core@python_ephemeral_refs#subdirectory=core",
         "sqlparams>=3.0.0",
     ],
     extras_require={
